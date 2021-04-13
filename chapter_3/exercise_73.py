@@ -1,8 +1,8 @@
 ##
 #Perform encryption and decryption of messages
 #Read the shift amount and the message from the user
-shift_amount=int(input("Enter the shift amount:\n"))
 message=input("Enter the message:\n")
+shift_amount=int(input("Enter the shift amount:\n"))
 new_message=""
 #Check if the user wants to perform encryption or decryption
 if shift_amount>0:
@@ -31,3 +31,5 @@ elif shift_amount<0:
             new_message=new_message+i  
 #Display the result                     
     print("The new message is :\n%s"%new_message)               
+else:
+    print("The shift amount entered isn't valid .")
