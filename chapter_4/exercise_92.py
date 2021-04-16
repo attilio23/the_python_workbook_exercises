@@ -1,64 +1,71 @@
 ##
 #Determine the expiry date(gregorian date), based on the purchase date(ordinal date) entered by the user
 from exercise_91 import leap
-#Store the number of days of the months and the period in which the product can be returned as constants
-D_JAN=31
-D_FEB_L=29
-D_FEB_NO_L=28
-D_MAR=31
-D_APR=30
-D_MAY=31
-D_JUN=30
-D_JUL=31
-D_AUG=31
-D_SEP=30
-D_OCT=31
-D_NOV=30
-D_DIC=31
+#Store the product can be returned as constant
 LAST_DATE=14
 ##Determine the gregorian date
 # @param year the year of the ordinal year
 # @param day the day of the ordinal date
 # @return the month and the day of the expiry date
 def ord_to_gre(year,day):
+    d_jan=31
+    d_feb=60
+    d_mar=91
+    d_apr=121
+    d_may=152
+    d_jun=182
+    d_jul=213
+    d_aug=244
+    d_sep=274
+    d_oct=305
+    d_nov=335
+    d_dic=366
+    if not(leap(year)):
+        d_feb=d_feb-1 
+        d_mar=d_mar-1
+        d_apr=d_apr-1
+        d_may=d_may-1
+        d_jun=d_jun-1
+        d_jul=d_jul-1
+        d_aug=d_aug-1
+        d_sep=d_sep-1
+        d_oct=d_oct-1
+        d_nov=d_nov-1
+        d_dic=d_dic-1
     d=day
     m=1
-    if leap(year):
-        D_FEB=D_FEB_L
-    else:
-        D_FEB=D_FEB_NO_L       
-    if D_JAN<d<=D_JAN+D_FEB:
-        d=d-D_JAN
+    if d_jan<d<=d_feb:
+        d=d-d_jan
         m=2   
-    elif D_JAN+D_FEB<d<=D_JAN+D_FEB+D_MAR:
-        d=d-D_FEB-D_JAN
+    elif d_feb<d<=d_mar:
+        d=d-d_feb
         m=3
-    elif D_JAN+D_FEB+D_MAR<d<=D_JAN+D_FEB+D_MAR+D_APR:
-        d=d-D_MAR-D_FEB-D_JAN
+    elif d_mar<d<=d_apr:
+        d=d-d_mar
         m=4
-    elif D_JAN+D_FEB+D_MAR+D_APR<d<=D_JAN+D_FEB+D_MAR+D_APR+D_MAY:
-        d=d-D_APR-D_MAR-D_FEB-D_JAN
+    elif d_apr<d<=d_may:
+        d=d-d_apr
         m=5           
-    elif D_JAN+D_FEB+D_MAR+D_APR+D_MAY<d<=D_JAN+D_FEB+D_MAR+D_APR+D_MAY+D_JUN:
-        d=d-D_MAY-D_APR-D_MAR-D_FEB-D_JAN
+    elif d_may<d<=d_jun:
+        d=d-d_may
         m=6
-    elif D_JAN+D_FEB+D_MAR+D_APR+D_MAY+D_JUN<d<=D_JAN+D_FEB+D_MAR+D_APR+D_MAY+D_JUN+D_JUL:
-        d=d-D_JUN-D_MAY-D_APR-D_MAR-D_FEB-D_JAN
+    elif d_jun<d<=d_jul:
+        d=d-d_jun
         m=7
-    elif D_JAN+D_FEB+D_MAR+D_APR+D_MAY+D_JUN+D_JUL<d<=D_JAN+D_FEB+D_MAR+D_APR+D_MAY+D_JUN+D_JUL+D_AUG:
-        d=d-D_JUL-D_JUN-D_MAY-D_APR-D_MAR-D_FEB-D_JAN
+    elif d_jul<d<=d_aug:
+        d=d-d_jul
         m=8
-    elif D_JAN+D_FEB+D_MAR+D_APR+D_MAY+D_JUN+D_JUL+D_AUG<d<=D_JAN+D_FEB+D_MAR+D_APR+D_MAY+D_JUN+D_JUL+D_AUG+D_SEP:
-        d=d-D_AUG-D_JUL-D_JUN-D_MAY-D_APR-D_MAR-D_FEB-D_JAN
+    elif d_aug<d<=d_sep:
+        d=d-d_aug
         m=9
-    elif D_JAN+D_FEB+D_MAR+D_APR+D_MAY+D_JUN+D_JUL+D_AUG+D_SEP<d<=D_JAN+D_FEB+D_MAR+D_APR+D_MAY+D_JUN+D_JUL+D_AUG+D_SEP+D_OCT:
-        d=d-D_SEP-D_AUG-D_JUL-D_JUN-D_MAY-D_APR-D_MAR-D_FEB-D_JAN
+    elif d_sep<d<=d_oct:
+        d=d-d_sep
         m=10   
-    elif D_JAN+D_FEB+D_MAR+D_APR+D_MAY+D_JUN+D_JUL+D_AUG+D_SEP+D_OCT<d<=D_JAN+D_FEB+D_MAR+D_APR+D_MAY+D_JUN+D_JUL+D_AUG+D_SEP+D_OCT+D_NOV:
-        d=d-D_OCT-D_SEP-D_AUG-D_JUL-D_JUN-D_MAY-D_APR-D_MAR-D_FEB-D_JAN
+    elif d_oct<d<=d_nov:
+        d=d-d_oct
         m=11
-    elif D_JAN+D_FEB+D_MAR+D_APR+D_MAY+D_JUN+D_JUL+D_AUG+D_SEP+D_OCT+D_NOV<d<=D_JAN+D_FEB+D_MAR+D_APR+D_MAY+D_JUN+D_JUL+D_AUG+D_SEP+D_OCT+D_NOV+D_DIC:
-        d=d-D_NOV-D_OCT-D_SEP-D_AUG-D_JUL-D_JUN-D_MAY-D_APR-D_MAR-D_FEB-D_JAN
+    elif d_nov<d<=d_dic:
+        d=d-d_nov
         m=12      
     if 1<=m<=9:
         m="0"+str(m)
