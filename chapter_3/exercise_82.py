@@ -1,7 +1,7 @@
 ##
 #Determine the corresponding binary number
 #Read the decimal number from the user
-decimal_number=input("Enter the decimal number:\n")
+decimal_number=input("Enter the decimal number :\n")
 result=""
 q=int(decimal_number)
 #Check if q is greater or equal than 0
