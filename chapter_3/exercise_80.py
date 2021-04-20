@@ -4,7 +4,7 @@
 n=int(input("Enter the number:"))
 #Check if the integer is less than 2
 if n<2:
-    print("The number entered isn't valid:\n")
+    print("The number entered isn't valid.\n")
 else:
 #Compute the prime factors     
     print("The prime factors of",n,"is:")
