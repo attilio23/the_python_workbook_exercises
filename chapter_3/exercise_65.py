@@ -4,4 +4,4 @@
 for i in range(10, 101, 10):
     d_f=i*1.8+32
 #Display the result   
-    print("%3d degrees Celsius are equal to %3d degrees Fahrenheit ."%(i,d_f))
+    print("%3d degrees Celsius are equal to %3d degrees Fahrenheit."%(i,d_f))
