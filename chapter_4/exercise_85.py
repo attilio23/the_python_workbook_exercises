@@ -10,8 +10,8 @@ def compute_hypo(side_1, side_2):
     return hypotenuse
 #Read the other two sides of the triangle and display the hypotenuse
 def main():
-    s_1=float(input("Enter the first side of the right triangle:\n"))
-    s_2=float(input("Enter the second side of the right triangle:\n"))
+    s_1=float(input("Enter the first side of the right triangle :\n"))
+    s_2=float(input("Enter the second side of the right triangle :\n"))
 #Check if the two sides are valids    
     if s_1>0 and s_2>0:
         hypo=compute_hypo(s_1,s_2)
