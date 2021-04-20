@@ -20,6 +20,6 @@ while count<UPP_LIM-1:
     else:
         print(n)
     count=count+1
-#Display the result    
+#Display the results    
 print("The maximum value found was",mx)    
 print("The maximum value was updated",count_updates,"times")
