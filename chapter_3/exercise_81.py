@@ -1,7 +1,7 @@
 ##
 #Determine the corresponding decimal number
 #Read the binary number from the user
-binary_number=input("Enter the binary number:\n")
+binary_number=input("Enter the binary number :\n")
 i=len(binary_number)-1
 j=0
 x=0
