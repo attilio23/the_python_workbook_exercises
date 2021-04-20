@@ -14,7 +14,7 @@ def compute_tot_fare(distance_travelled):
 #Demonstrate the compute_tot_fare function   
 def main():
 #Check if the distance travelled is valid    
-    d_t=float(input("Enter the distance travelled(in kilometers):\n"))
+    d_t=float(input("Enter the distance travelled(in kilometers) :\n"))
     if d_t>0:    
         total_fare=compute_tot_fare(d_t)
         print("The total fare is:$%.2f"%total_fare)
