@@ -1,7 +1,7 @@
 ##
 #Compute the square root of a number
 #Read the number from the user 
-x=float(input("Enter the number:\n"))
+x=float(input("Enter the number :\n"))
 guess=x/2
 #Check if the number is valid
 if x>=0:
