@@ -1,7 +1,7 @@
 ##
 #Determine the sequence that forms through the Collatz conjecture, based on the number entered by the user
 #Read the number from the user
-n=int(input("Enter the first number:\n"))
+n=int(input("Enter the first number :\n"))
 #Keep looping while the user enters a number greater than 0
 while n>0:
     print("%d"%n,end='')
