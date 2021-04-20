@@ -29,7 +29,7 @@ for i in range(LIMIT_G):
     print("(%d flips)"%count)
     s=s+count   
 average=s/LIMIT_G
-#Disaplay the average 
+#Display the average 
 print("On average, %.1f flips were needed."%average)                
 
         
