@@ -1,7 +1,7 @@
 ##
 #Determine if a string is a palindrome
 #Read the string from the user
-string=input("Enter the string:\n")
+string=input("Enter the string :\n")
 i=0
 j=len(string)-1
 is_palindrome=True
