@@ -1,7 +1,7 @@
 ##
 #Determine if a phrase is palindrome
 #Read the phrase from the user
-string=input("Enter the string:\n")
+string=input("Enter the string :\n")
 string=string.upper()
 string_2=""
 i=0
