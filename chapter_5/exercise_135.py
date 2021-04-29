@@ -1,7 +1,7 @@
 ##
 #Display all prime numbers between 2 and the limit
 #Store the limit as constant
-LIMIT=1000000
+LIMIT=100
 #Create a list to store the numbers
 numbers=[]
 #Store each number from 0 to the limit in numbers
@@ -16,7 +16,7 @@ while p<LIMIT+1:
         numbers[i]=0
     p=p+1
 #Keep looping while p is less or equal than the limit and equal to zero    
-    while numbers[p]==0 and p<LIMIT+1:
+    while p<LIMIT+1 and numbers[p]==0:
         p=p+1
 #Display the result        
 print("The prime numbers between 2 and %d are:\n"%LIMIT)        
