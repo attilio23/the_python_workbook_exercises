@@ -1,6 +1,6 @@
 ##
-#Show the chemical elements whose name can only be written using the element symbols
-#The following list contains the name of the chemical elements
+# Show the chemical elements whose name can only be written using the element symbols
+# The following list contains the name of the chemical elements
 name_chemical_elements = ["Actinium", "Aluminium", "Americium", "Antimony", "Argon", \
 "Arsenic", "Astatine", "Barium", "Berkelium", "Beryllium", "Bismuth", "Bohrium", "Boron", \
 "Bromine", "Cadmium", "Caesium", "Calcium", "Californium", "Carbon", "Cerium", "Chlorine", \
@@ -17,7 +17,7 @@ name_chemical_elements = ["Actinium", "Aluminium", "Americium", "Antimony", "Arg
 "Silicon", "Silver", "Sodium", "Strontium", "Sulfur", "Tantalum", "Technetium", "Tellurium", \
 "Tennessine", "Terbium", "Thallium", "Thorium", "Thulium", "Tin", "Titanium", "Tungsten", \
 "Uranium", "Vanadium", "Xenon", "Ytterbium", "Yttrium", "Zinc", "Zirconium"]
-#The following list contains the element symbols
+# The following list contains the element symbols
 symbols_chemical_elements = ["Ac", "Al", "Am", "Sb", "Ar", "As", "At", "Ba", "Bk", \
 "Be", "Bi", "Bh", "B", "Br", "Cd", "Cs", "Ca", "Cf", "C", "Ce", "Cl", "Cr", "Co", "Cn", \
 "Cu", "Cm", "Ds", "Db", "Dy", "Es", "Er", "Eu", "Fm", "Fl", "F", "Fr", "Gd", "Ga", "Ge", \
@@ -52,4 +52,5 @@ def main():
     for k in n_pn:
         print("%s can be spelled as %s"%(k, n_pn[k]))
 # Call the main function                     
-main()
+if __name__=="__main__":
+    main()
