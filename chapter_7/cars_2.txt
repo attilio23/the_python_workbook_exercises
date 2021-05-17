@@ -1,0 +1,23 @@
+Abarth
+Aston Martin
+Bentley
+Cadillac
+Dacia
+Cupra
+Hummer
+Jaguar
+Land Rover
+Lotus
+McLaren
+Mitsubishi
+Opel
+Porsche
+Seat
+Skoda
+Tata
+Suzuki
+Tesla
+Volvo
+Rolls Royce
+Smart
+Volkswagen
