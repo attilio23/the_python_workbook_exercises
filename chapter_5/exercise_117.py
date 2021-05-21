@@ -22,6 +22,7 @@ def onlyWords(s):
 def main():
     phrase=input("Enter the phrase:\n")
     words=onlyWords(phrase)
+    print(words)
     print("\n")
     for word in words:
         print(word)
