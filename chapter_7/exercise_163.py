@@ -10,13 +10,13 @@ p_n_g = []
 # Process each year in the range
 for l in range(FIRST_YEAR, LAST_YEAR + 1):
 # Open the file for reading
-    inf_b = open("baby_names/BabyNames/"+str(l)+"_BoysNames.txt", "r")
+    inf_b = open("BabyNames/"+str(l)+"_BoysNames.txt", "r")
     l_b = ((inf_b.readline()).rstrip()).split()
 # Check if the name is already present in the list
     if not(l_b[0] in p_n_b):    
         p_n_b.append(l_b[0])
 # Open the file for reading
-    inf_g = open("baby_names/BabyNames/"+str(l)+"_GirlsNames.txt", "r")
+    inf_g = open("BabyNames/"+str(l)+"_GirlsNames.txt", "r")
     l_g = ((inf_g.readline()).rstrip()).split()
 # Check if the name is already present in the list
     if not(l_g[0] in p_n_g):
