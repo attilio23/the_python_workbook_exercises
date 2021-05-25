@@ -21,6 +21,7 @@ for l in range(FIRST_YEAR, LAST_YEAR + 1):
 # Check if the name is already present in the list
     if not(l_g[0] in p_n_g):
         p_n_g.append(l_g[0])
+# Close the files
     inf_b.close()
     inf_g.close()
 # Display the result
